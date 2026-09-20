@@ -34,7 +34,7 @@ button, a { -webkit-tap-highlight-color: transparent; }
 #invitation { opacity: 0; transition: opacity .9s ease .15s; }
 #invitation.visible { opacity: 1; }
 .panel { min-height: 100svh; }
-.hero { position: relative; display: grid; place-items: center; text-align: center; color: white; background: url("assets/eglise-hero.png") center/cover no-repeat; }
+.hero { position: relative; display: grid; place-items: center; text-align: center; color: white; background: url("assets/eglise-hero.webp") center/cover no-repeat; }
 .hero-shade { position: absolute; inset: 0; background: linear-gradient(180deg, rgba(8,14,32,.35), rgba(8,14,32,.15) 40%, rgba(8,14,32,.72)); }
 .hero-content { position: relative; z-index: 1; padding: 28px 20px; text-shadow: 0 2px 16px rgba(0,0,0,.45); }
 .hero h2 { font: 500 clamp(3.4rem, 13vw, 7.3rem)/.86 "Cormorant Garamond", serif; margin: 20px 0 26px; }
@@ -98,7 +98,7 @@ button, a { -webkit-tap-highlight-color: transparent; }
 .qr-frame img { width: 100%; display: block; }
 .scan-label { font-size: .62rem; letter-spacing: .07em; text-transform: uppercase; color: #8a6b32; }
 
-.verse { position: relative; min-height: 100svh; display: grid; place-items: center; color: var(--navy); text-align: center; background: url("assets/verse-background.png") center/cover no-repeat; }
+.verse { position: relative; min-height: 100svh; display: grid; place-items: center; color: var(--navy); text-align: center; background: url("assets/verse-background.webp") center/cover no-repeat; }
 .verse::before { content: ""; position: absolute; inset: 0; background: radial-gradient(circle at center, rgba(255,250,245,.34), rgba(255,250,245,.05) 58%, transparent 78%); }
 .verse-inner { position: relative; z-index: 1; width: min(78vw, 700px); padding: 50px 20px; }
 .verse-mark { font: 500 5rem/1 "Cormorant Garamond", serif; color: #b68c3c; }
