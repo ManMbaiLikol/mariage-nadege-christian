@@ -1,0 +1,160 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <meta name="theme-color" content="#101a38" />
+  <meta name="description" content="Invitation à la bénédiction nuptiale de Nadège et Christian — 31 octobre 2026." />
+  <title>Nadège & Christian — 31 octobre 2026</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,500&family=Manrope:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="petals" aria-hidden="true"></div>
+
+  <section class="cover" id="cover">
+    <div class="cover-card">
+      <span class="cross" aria-hidden="true">✦</span>
+      <p class="eyebrow">Bénédiction nuptiale</p>
+      <div class="monogram" aria-label="N et C">N<span>&</span>C</div>
+      <h1>Nadège <em>&</em> Christian</h1>
+      <p class="date">31 · 10 · 2026</p>
+      <button class="open-button" id="openInvitation" type="button">
+        <span>Ouvrir l’invitation</span>
+        <small>avec musique</small>
+      </button>
+    </div>
+  </section>
+
+  <button class="sound-button" id="soundToggle" type="button" aria-label="Couper la musique" title="Musique">
+    <span class="sound-icon">♫</span>
+  </button>
+
+  <audio id="backgroundMusic" preload="metadata" loop>
+    <source src="assets/christian-nadege-depuis-fox-river.mp3" type="audio/mpeg" />
+  </audio>
+
+  <main id="invitation" aria-hidden="true">
+    <section class="hero panel">
+      <div class="hero-shade"></div>
+      <div class="hero-content reveal">
+        <p class="eyebrow">Invitation à notre bénédiction nuptiale</p>
+        <h2>Nadège <span>&</span> Christian</h2>
+        <div class="gold-rule"><i></i><b>✦</b><i></i></div>
+        <p class="hero-date">Samedi 31 octobre 2026</p>
+        <a class="scroll-cue" href="#notre-histoire" aria-label="Découvrir l’invitation">Découvrir <span>↓</span></a>
+      </div>
+    </section>
+
+    <section class="story section" id="notre-histoire">
+      <div class="ornament reveal">❦</div>
+      <div class="story-card reveal">
+        <p>Notre histoire n’a pas été un long chemin sans épreuves, mais chaque épreuve nous a appris à nous aimer davantage, à nous pardonner et à avancer ensemble.</p>
+        <p>Aujourd’hui, avec le cœur rempli de gratitude, nous choisissons de confier notre avenir à Dieu et de nous dire <strong>OUI pour la vie</strong>, entourés de nos enfants et de ceux qui nous sont chers.</p>
+        <p>Le 31 octobre 2026, nous vous invitons à être témoins et compagnons de ce précieux moment où notre amour recevra la bénédiction de Dieu.</p>
+      </div>
+    </section>
+
+    <section class="countdown section" aria-label="Compte à rebours">
+      <p class="eyebrow reveal">Dans l’attente de ce jour béni</p>
+      <div class="count-grid reveal" id="countdown">
+        <div><strong id="days">—</strong><span>Jours</span></div>
+        <div><strong id="hours">—</strong><span>Heures</span></div>
+        <div><strong id="minutes">—</strong><span>Minutes</span></div>
+        <div><strong id="seconds">—</strong><span>Secondes</span></div>
+      </div>
+    </section>
+
+    <section class="schedule section">
+      <div class="section-heading reveal">
+        <span>Notre journée</span>
+        <h2>Les rendez-vous</h2>
+      </div>
+
+      <article class="event-card reveal">
+        <div class="event-time"><span>14</span><small>h 00</small></div>
+        <div class="event-info">
+          <p class="event-kicker">Bénédiction nuptiale</p>
+          <h3>Église Saint-Martyr de Nkolo</h3>
+          <p>Maetur Mimboman</p>
+          <a href="#itineraire-eglise">Voir l’itinéraire</a>
+        </div>
+      </article>
+
+      <div class="timeline-mark reveal"><i></i><span>✦</span><i></i></div>
+
+      <article class="event-card reverse reveal">
+        <div class="event-time"><span>18</span><small>h 00</small></div>
+        <div class="event-info">
+          <p class="event-kicker">Réception</p>
+          <h3>Salle des fêtes de l’Hôtel NKJ</h3>
+          <p>Derrière la station Blessing, Nkoabang</p>
+          <a href="#itineraire-reception">Voir l’itinéraire</a>
+        </div>
+      </article>
+    </section>
+
+    <section class="dress section">
+      <div class="section-heading reveal">
+        <span>Harmonie des couleurs</span>
+        <h2>Dress code</h2>
+      </div>
+      <div class="dress-grid reveal">
+        <div class="dress-item ladies">
+          <div class="swatches" aria-hidden="true"><i></i><i></i><i></i></div>
+          <h3>Dames</h3>
+          <p>Rose et ses nuances</p>
+        </div>
+        <div class="dress-item gentlemen">
+          <div class="swatches" aria-hidden="true"><i></i><i></i><i></i></div>
+          <h3>Messieurs</h3>
+          <p>Bleu nuit</p>
+        </div>
+      </div>
+      <p class="gift reveal">Votre présence sera notre plus beau cadeau.</p>
+    </section>
+
+    <section class="routes section">
+      <div class="section-heading reveal">
+        <span>Pour nous rejoindre</span>
+        <h2>Itinéraires</h2>
+      </div>
+      <p class="route-intro reveal">Scannez le QR code correspondant au lieu où vous souhaitez vous rendre.</p>
+      <div class="route-grid">
+        <article class="qr-card reveal" id="itineraire-eglise">
+          <p class="route-number">01</p>
+          <h3>Vers l’église</h3>
+          <p>Église Saint-Martyr de Nkolo<br />Maetur Mimboman</p>
+          <div class="qr-frame"><img src="assets/qr-eglise.jpg" alt="QR code de l’itinéraire vers l’église Saint-Martyr de Nkolo" /></div>
+          <span class="scan-label">Scannez pour ouvrir l’itinéraire</span>
+        </article>
+        <article class="qr-card reveal" id="itineraire-reception">
+          <p class="route-number">02</p>
+          <h3>Vers la réception</h3>
+          <p>Hôtel NKJ<br />Nkoabang</p>
+          <div class="qr-frame"><img src="assets/qr-reception.jpg" alt="QR code de l’itinéraire vers la salle des fêtes de l’Hôtel NKJ" /></div>
+          <span class="scan-label">Scannez pour ouvrir l’itinéraire</span>
+        </article>
+      </div>
+    </section>
+
+    <section class="verse section" aria-label="Verset biblique">
+      <div class="verse-inner reveal">
+        <span class="verse-mark">“</span>
+        <blockquote>Ce que Dieu a uni,<br />que personne ne le sépare.</blockquote>
+        <cite>Matthieu 19:6</cite>
+      </div>
+    </section>
+
+    <footer>
+      <div class="footer-monogram">N <span>&</span> C</div>
+      <p>31 octobre 2026</p>
+      <small>Avec amour et gratitude</small>
+    </footer>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
