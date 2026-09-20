@@ -5,6 +5,21 @@ const soundButton = document.getElementById('soundToggle');
 const backgroundMusic = document.getElementById('backgroundMusic');
 
 let isPlaying = false;
+let trackIndex = 0;
+const musicTracks = [
+  'assets/mobile-audio/part-00.mp3',
+  'assets/mobile-audio/part-01.mp3',
+  'assets/mobile-audio/part-02.mp3',
+  'assets/mobile-audio/part-03.mp3',
+  'assets/mobile-audio/part-04.mp3'
+];
+backgroundMusic.src = musicTracks[trackIndex];
+
+backgroundMusic.addEventListener('ended', async () => {
+  trackIndex = (trackIndex + 1) % musicTracks.length;
+  backgroundMusic.src = musicTracks[trackIndex];
+  if (isPlaying) await backgroundMusic.play();
+});
 
 async function startMusic() {
   backgroundMusic.volume = .58;
